@@ -1229,6 +1229,9 @@ img, video { max-width: 100%; height: auto; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 0.5rem;
 }
 
 .reel-card {
@@ -1237,6 +1240,7 @@ img, video { max-width: 100%; height: auto; }
   overflow: hidden;
   cursor: pointer;
   aspect-ratio: 1;
+  background: #1a1a2e;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
