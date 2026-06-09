@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Apostolic Youth Movement</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <link rel="preload" href="Media/Hero background.jpeg" as="image" fetchpriority="high">
+  <link rel="preload" href="Media/Landing page hero background.mp4" as="video" type="video/mp4" fetchpriority="high">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all';this.onload=null;">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="Media/Logo.jpeg" alt="AYM Logo" class="nav-logo-img">
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="memories.html" class="nav-link">Ministries</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="announcements.html" class="nav-link">Announcements</a>
+      </div>
+
+      <div class="nav-actions">
+        <span class="admin-indicator" id="adminIndicator"><i class="fas fa-shield-alt"></i> Admin</span>
+        <button class="nav-give-btn" onclick="bookEvent('Give')"><i class="fas fa-heart"></i> Give</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="memories.html">Ministries</a>
+      <a href="profile.html">Profile</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="about.html#feedbackForm">Contact</a>
+    </div>
+  </div>
+
+  <section class="hero has-image-bg">
+    <div class="hero-image-fallback" style="background-image: url('Media/Hero background.jpeg')"></div>
+    <video class="hero-video" autoplay muted loop playsinline poster="Media/Hero background.jpeg">
+      <source src="Media/Landing page hero background.mp4" type="video/mp4">
+    </video>
+    <div class="hero-bg-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 fetchpriority="high">At Apostolic Youth Movement, we make room for everyone to grow in faith, find community, and encounter God together.</h1>
+        <p>We are a spiritually uplifting movement through the gospel of Christ and worship. Join us as we build a generation rooted in faith, fellowship, and service.</p>
+        <div class="hero-buttons">
+          <a href="about.html#contacts" class="btn btn-light"><i class="fas fa-link"></i> Stay Connected</a>
+          <a href="about.html" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.3)"><i class="fas fa-chevron-right"></i> Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt reveal">
+    <div class="container">
+      <div class="featured-intro">
+        <h2>A Youth Movement for real relationships &amp; encounters with God</h2>
+        <p>Seeking God together as young people can feel like a big step. Because what if your earnest pursuit is met with silence? At AYM, we create space for real relationships and real encounters with the living God, where you'll feel His presence and walk away transformed through the power of His Spirit.</p>
+        <div class="info-row">
+          <div class="info-card address-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Address</h3>
+            <p>21 Roos street, Klipportjie, Germiston 1428</p>
+            <div class="address-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.53289034046!2d28.158246!3d-26.320564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9514f8a8a8a8a8%3A0x8a8a8a8a8a8a8a8a!2s21%20Roos%20St%2C%20Klippoortjie%2C%20Germiston%2C%201428!5e0!3m2!1sen!2sza!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="AYM Location"></iframe>
+            </div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=21+Roos+street+Klipportjie+Germiston+1428+South+Africa" target="_blank" class="btn btn-primary" style="margin-top:0.75rem;"><i class="fas fa-directions"></i> Get Directions</a>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a href="about.html" class="btn btn-primary"><i class="fas fa-book-open"></i> Our Story</a>
+          <a href="about.html#feedbackForm" class="btn btn-outline"><i class="fas fa-link"></i> Stay Connected</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Apostolic Youth Movement</h2>
+        <p>We are built on three foundations that guide everything we do.</p>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fas fa-cross"></i></div>
+          <h3>Faith</h3>
+          <p>Deepening our relationship with God through prayer, worship, and the study of His Word. Faith isn't just for Sundays - it transforms every day of our lives.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fas fa-hands-helping"></i></div>
+          <h3>Fellowship</h3>
+          <p>Building authentic relationships where everyone belongs. Don't worry about having it all together - pull up a chair with us and just be you.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fas fa-heart"></i></div>
+          <h3>Service</h3>
+          <p>Partnering together to invest in our community. We are called to be the hands and feet of Jesus, serving our neighbors and transforming our valley.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="support-section reveal">
+    <h2>Prayer &amp; Support</h2>
+    <p class="support-sub">No struggle is too hopeless for Jesus!</p>
+    <p>If you're going through a difficult time or need someone to pray with you, you're not alone. Our community is here to support you through every season of life. We want to be there for you as others have been there for us.</p>
+    <a href="about.html#feedbackForm" class="btn btn-light"><i class="fas fa-pray"></i> Get Support</a>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <a href="about.html">Our Story</a>
+        <a href="about.html">Mission &amp; Vision</a>
+        <a href="about.html">Our Leaders</a>
+        <a href="about.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Next Steps</h4>
+        <a href="about.html#contacts">Plan a Visit</a>
+        <a href="about.html#contacts">Join a Group</a>
+        <a href="about.html#contacts">Support Groups</a>
+        <a href="about.html#feedbackForm">Prayer Requests</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ministries &amp; Care</h4>
+        <a href="memories.html">Ministries Overview</a>
+        <a href="profile.html">Youth Events</a>
+        <a href="memories.html">Worship Nights</a>
+        <a href="about.html">Prayer &amp; Support</a>
+      </div>
+      <div class="footer-col">
+        <h4>Messages &amp; Media</h4>
+        <a href="memories.html">Sermons</a>
+        <a href="memories.html">Stories</a>
+        <a href="https://www.tiktok.com/@_aymofficial" target="_blank">TikTok</a>
+        <a href="memories.html">Media Library</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Apostolic Youth Movement</span>
+      <a href="https://867d6e7d.keletsotladiportfolio.pages.dev/" target="_blank" class="footer-dev-link">Developed By Keletso Tladi</a>
+    </div>
+  </footer>
+
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <div class="modal-icon"><i class="fas fa-heart"></i></div>
+      <h2>Thank You!</h2>
+      <p>Your support means the world to us.</p>
+      <button class="btn btn-primary" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+</body>
+</html>

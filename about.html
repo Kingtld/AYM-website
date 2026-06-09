@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Apostolic Youth Movement</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <link rel="preload" href="Media/church event hero background.jpeg" as="image" fetchpriority="high">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all';this.onload=null;">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="Media/Logo.jpeg" alt="AYM Logo" class="nav-logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="memories.html" class="nav-link">Ministries</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="announcements.html" class="nav-link">Announcements</a>
+      </div>
+      <div class="nav-actions">
+        <span class="admin-indicator" id="adminIndicator"><i class="fas fa-shield-alt"></i> Admin</span>
+        <button class="nav-give-btn" onclick="bookEvent('Give')"><i class="fas fa-heart"></i> Give</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="memories.html">Ministries</a>
+      <a href="profile.html">Profile</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="about.html#feedbackForm">Contact</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="page-header" style="background-image: url('Media/church event hero background.jpeg'); background-size: cover; background-position: center; position: relative;">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,71,161,0.85),rgba(26,107,255,0.75));z-index:0;"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <h1 fetchpriority="high">About Apostolic Youth Movement</h1>
+      <p>O MOHAU WA MODIMO</p>
+    </div>
+  </div>
+
+  <main class="about-container">
+    <div class="about-content">
+
+      <section class="about-section bordered-primary reveal">
+        <div class="section-icon"><i class="fas fa-eye"></i></div>
+        <h2>Our Vision</h2>
+        <p>To be a nationally recognised youth movement that raises spiritually grounded, educated, and community-conscious leaders who are equipped to transform lives across every province of South Africa.</p>
+        <p>AYM envisions a South Africa where every young person, regardless of background or circumstance, has the spiritual foundation, education, and opportunity to rise to their fullest potential and lead meaningful change in their communities.</p>
+      </section>
+
+      <section class="about-section bordered-green reveal reveal-delay-1">
+        <div class="section-icon"><i class="fas fa-bullseye"></i></div>
+        <h2>Our Mission</h2>
+        <p>The Apostolic Youth Movement is committed to the holistic development of young people through spiritual formation, academic encouragement, and compassionate community service. Through regular conferences, outreach programmes, skills development initiatives, and recreational activities, AYM creates safe and inspiring spaces where youth are empowered to grow in faith, pursue education, and actively contribute to the upliftment of those around them.</p>
+        <p>Our mission is carried out across three key pillars:</p>
+        <div class="pillars-grid" style="margin-top:1.5rem;">
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-church"></i></div>
+            <h3>Spiritual Growth</h3>
+            <p>Through conferences, prayer services, and fellowship with senior pastors and bishops held three times a year.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Education &amp; Opportunity</h3>
+            <p>Through career expos, career days, academic encouragement, and creating pathways for youth still in school.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-hands-helping"></i></div>
+            <h3>Community Service &amp; Outreach</h3>
+            <p>Through second-hand clothing donations, sanitary towel contributions to schools, gala dinners, hiking, and family day events.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section bordered-gold reveal reveal-delay-2">
+        <div class="section-icon"><i class="fas fa-star"></i></div>
+        <h2>Our Core Values</h2>
+        <p>Our identity is built on five cornerstone values that guide every gathering, programme, and relationship.</p>
+        <div class="pillars-grid" style="margin-top:1.5rem;">
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-pray"></i></div>
+            <h3>Faith</h3>
+            <p>Rooted in prayer, worship, and spiritual fellowship with God and one another.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-book"></i></div>
+            <h3>Education</h3>
+            <p>Equipping youth with knowledge as a powerful tool for personal and communal transformation.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-heart"></i></div>
+            <h3>Service</h3>
+            <p>Giving back through donations, sanitary dignity, outreach, and compassionate care.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-users"></i></div>
+            <h3>Community</h3>
+            <p>Building belonging and connection through shared events, conferences, and experiences.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Growth</h3>
+            <p>Expanding our reach, impact, and opportunity — from Gauteng to every province of South Africa.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section bordered-dark reveal reveal-delay-3">
+        <div class="section-icon"><i class="fas fa-handshake"></i></div>
+        <h2>Get Involved</h2>
+        <p>Whether you are looking for spiritual growth, educational opportunities, or a community that cares, there is a place for you at AYM. We meet regularly across Gauteng's 12 branches and welcome every young person ready to grow in faith and purpose.</p>
+        <div class="btn-group" style="margin-top:1rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+          <a href="https://wa.me/27738463063" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Join Our Community</a>
+          <a href="#contacts" class="btn btn-outline"><i class="fas fa-phone-alt"></i> Contact Us</a>
+        </div>
+      </section>
+
+      <div class="team-grid has-bg reveal">
+        <div class="team-bg-image" style="background-image: url('Media/Leaders hero background.jpeg')"></div>
+        <h2><i class="fas fa-people-carry"></i> Our Leaders</h2>
+        <div class="team-members">
+
+          <div class="team-member is-cutout">
+            <img class="team-member-cutout" src="Media/Leaders/Mr_Tshukudu_AYM_Founder_-removebg-preview.png" alt="Mr Tshukudu" loading="lazy">
+            <div class="team-member-overlay">
+              <h4>Mr Tshukudu</h4>
+              <p>AYM Founder</p>
+            </div>
+          </div>
+
+          <div class="team-member is-cutout">
+            <img class="team-member-cutout" src="Media/Leaders/Mr_Mahlangu_President-removebg-preview.png" alt="Mr Mahlangu" loading="lazy">
+            <div class="team-member-overlay">
+              <h4>Mr Mahlangu</h4>
+              <p>President</p>
+            </div>
+          </div>
+
+          <div class="team-member is-cutout">
+            <img class="team-member-cutout" src="Media/Leaders/_Mr_Makanatleng__vice_President____1_-removebg-preview.png" alt="Mr Makanatleng" loading="lazy">
+            <div class="team-member-overlay">
+              <h4>Mr Makanatleng</h4>
+              <p>Vice President</p>
+            </div>
+          </div>
+
+          <div class="team-member is-cutout">
+            <img class="team-member-cutout" src="Media/Leaders/Mrs_Seroka_Vice_President-removebg-preview.png" alt="Mrs Seroka" loading="lazy">
+            <div class="team-member-overlay">
+              <h4>Mrs Seroka</h4>
+              <p>Vice President</p>
+            </div>
+          </div>
+
+          <div class="team-member is-cutout">
+            <img class="team-member-cutout" src="Media/Leaders/Mr_Makua_General_Secretary_-removebg-preview.png" alt="Mr Makua" loading="lazy">
+            <div class="team-member-overlay">
+              <h4>Mr Makua</h4>
+              <p>General Secretary</p>
+            </div>
+          </div>
+
+          <div class="team-member is-cutout">
+            <img class="team-member-cutout" src="Media/Leaders/Ms_Senong_Deputy_Secretary-removebg-preview.png" alt="Ms Senong" loading="lazy">
+            <div class="team-member-overlay">
+              <h4>Ms Senong</h4>
+              <p>Deputy Secretary</p>
+            </div>
+          </div>
+
+          <div class="team-member is-cutout">
+            <img class="team-member-cutout" src="Media/Leaders/Ms_Motabeni_Treasurer-removebg-preview.png" alt="Ms Motabeni" loading="lazy">
+            <div class="team-member-overlay">
+              <h4>Ms Motabeni</h4>
+              <p>Treasurer</p>
+            </div>
+          </div>
+
+          <div class="team-member is-cutout">
+            <img class="team-member-cutout" src="Media/Leaders/Ms_Mahlakoane_Deputy_Treasurer-removebg-preview.png" alt="Ms Mahlakoane" loading="lazy">
+            <div class="team-member-overlay">
+              <h4>Ms Mahlakoane</h4>
+              <p>Deputy Treasurer</p>
+            </div>
+          </div>
+
+          <div class="team-member is-cutout">
+            <img class="team-member-cutout" src="Media/Leaders/Mr_Makgalemele_Organiser-removebg-preview.png" alt="Mr Makgalemele" loading="lazy">
+            <div class="team-member-overlay">
+              <h4>Mr Makgalemele</h4>
+              <p>Organiser</p>
+            </div>
+          </div>
+
+          <div class="team-member is-cutout">
+            <img class="team-member-cutout" src="Media/Leaders/Mr_Maile_Deputy_Organiser-removebg-preview.png" alt="Mr Maile" loading="lazy">
+            <div class="team-member-overlay">
+              <h4>Mr Maile</h4>
+              <p>Deputy Organiser</p>
+            </div>
+          </div>
+
+          <div class="team-member" style="background-image: url('Media/Leader- Mrs Arch Bishop Molefe.jpeg')">
+            <div class="team-member-overlay">
+              <h4>Mrs Arch Bishop Molefe</h4>
+              <p>Leader</p>
+            </div>
+          </div>
+
+          <div class="team-member" style="background-image: url('Media/Leader- Sister raesibe Tma (Motivational speaker).jpeg')">
+            <div class="team-member-overlay">
+              <h4>Sister Raesibe Tma</h4>
+              <p>Motivational Speaker</p>
+            </div>
+          </div>
+
+          <div class="team-member" style="background-image: url('Media/Leader- Mr Arch Bishop Mabudusha.jpeg')">
+            <div class="team-member-overlay">
+              <h4>Mr Arch Bishop Mabudusha</h4>
+              <p>Leader</p>
+            </div>
+          </div>
+
+          <div class="team-member" style="background-image: url('Media/Leader- Arch bishop molefe.jpeg')">
+            <div class="team-member-overlay">
+              <h4>Arch Bishop Molefe</h4>
+              <p>Leader</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts-section reveal" id="contacts">
+      <h2><i class="fas fa-phone-alt"></i> Contact Us</h2>
+      <p>Reach out to any of our leaders directly</p>
+      <div class="contacts-list">
+        <div class="contact-item">
+          <div class="contact-info">
+            <strong>President</strong>
+            <span class="contact-number">073 846 3063</span>
+          </div>
+          <div class="contact-actions">
+            <button class="contact-btn copy-btn" onclick="copyNumber('073 846 3063')" title="Copy number"><i class="fas fa-copy"></i></button>
+            <a href="https://wa.me/27738463063" target="_blank" class="contact-btn wa-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-info">
+            <strong>Deputy President</strong>
+            <span class="contact-number">081 769 0327</span>
+          </div>
+          <div class="contact-actions">
+            <button class="contact-btn copy-btn" onclick="copyNumber('081 769 0327')" title="Copy number"><i class="fas fa-copy"></i></button>
+            <a href="https://wa.me/27817690327" target="_blank" class="contact-btn wa-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-info">
+            <strong>Secretary</strong>
+            <span class="contact-number">076 979 6560</span>
+          </div>
+          <div class="contact-actions">
+            <button class="contact-btn copy-btn" onclick="copyNumber('076 979 6560')" title="Copy number"><i class="fas fa-copy"></i></button>
+            <a href="https://wa.me/27769796560" target="_blank" class="contact-btn wa-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-section reveal">
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.53289034046!2d28.158246!3d-26.320564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9514f8a8a8a8a8%3A0x8a8a8a8a8a8a8a8a!2s21%20Roos%20St%2C%20Klippoortjie%2C%20Germiston%2C%201428!5e0!3m2!1sen!2sza!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="AYM Location"></iframe>
+      </div>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=21+Roos+street+Klipportjie+Germiston+1428+South+Africa" target="_blank" class="btn btn-primary" style="display:inline-flex;margin-top:1rem;"><i class="fas fa-directions"></i> Get Directions</a>
+    </div>
+
+    <div class="feedback-form reveal" id="feedbackForm">
+      <h2><i class="fas fa-comment-dots"></i> Send Feedback</h2>
+      <p>We value your thoughts. Share your feedback with us.</p>
+      <form id="feedbackFormElement" onsubmit="return handleFeedback(event)">
+        <label for="feedbackName">Name</label>
+        <input type="text" id="feedbackName" name="name" placeholder="Your name" required>
+        <label for="feedbackSurname">Surname</label>
+        <input type="text" id="feedbackSurname" name="surname" placeholder="Your surname" required>
+        <label for="feedbackRating">Rating</label>
+        <div class="star-rating" id="starRating">
+          <i class="far fa-star" data-value="1"></i>
+          <i class="far fa-star" data-value="2"></i>
+          <i class="far fa-star" data-value="3"></i>
+          <i class="far fa-star" data-value="4"></i>
+          <i class="far fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" id="feedbackRating" name="rating" value="0">
+        <label for="feedbackMessage">Message</label>
+        <textarea id="feedbackMessage" name="message" placeholder="Tell us what's on your heart..." required></textarea>
+        <button type="submit" class="btn btn-primary" id="feedbackSubmitBtn" style="width:100%;justify-content:center">
+          <i class="fas fa-paper-plane"></i> Send Feedback
+        </button>
+      </form>
+      <div id="feedbackStatus" style="margin-top:1rem;font-weight:600;display:none;"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <a href="about.html">Our Story</a>
+        <a href="about.html">Mission &amp; Vision</a>
+        <a href="about.html">Our Leaders</a>
+        <a href="about.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Next Steps</h4>
+        <a href="#contacts">Plan a Visit</a>
+        <a href="#contacts">Join a Group</a>
+        <a href="#contacts">Support Groups</a>
+        <a href="#feedbackForm">Prayer Requests</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ministries &amp; Care</h4>
+        <a href="memories.html">Ministries Overview</a>
+        <a href="profile.html">Youth Events</a>
+        <a href="memories.html">Worship Nights</a>
+        <a href="about.html">Prayer &amp; Support</a>
+      </div>
+      <div class="footer-col">
+        <h4>Messages &amp; Media</h4>
+        <a href="memories.html">Sermons</a>
+        <a href="memories.html">Stories</a>
+        <a href="https://www.tiktok.com/@_aymofficial" target="_blank">TikTok</a>
+        <a href="memories.html">Media Library</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Apostolic Youth Movement</span>
+      <a href="https://867d6e7d.keletsotladiportfolio.pages.dev/" target="_blank" class="footer-dev-link">Developed By Keletso Tladi</a>
+    </div>
+  </footer>
+
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <div class="modal-icon"><i class="fas fa-heart"></i></div>
+      <h2>Thank You!</h2>
+      <p>Your support means the world to us.</p>
+      <button class="btn btn-primary" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+</body>
+</html>

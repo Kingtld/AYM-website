@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Announcements | Apostolic Youth Movement</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all';this.onload=null;">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="Media/Logo.jpeg" alt="AYM Logo" class="nav-logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="memories.html" class="nav-link">Ministries</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="announcements.html" class="nav-link active">Announcements</a>
+      </div>
+      <div class="nav-actions">
+        <span class="admin-indicator" id="adminIndicator"><i class="fas fa-shield-alt"></i> Admin</span>
+        <button class="nav-give-btn" onclick="bookEvent('Give')"><i class="fas fa-heart"></i> Give</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="memories.html">Ministries</a>
+      <a href="profile.html">Profile</a>
+      <a href="announcements.html" class="active">Announcements</a>
+      <a href="about.html#feedbackForm">Contact</a>
+    </div>
+  </div>
+
+  <div class="page-header" style="background-image: url('Media/church event hero background.jpeg'); background-size: cover; background-position: center; position: relative;">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,71,161,0.85),rgba(26,107,255,0.75));z-index:0;"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <h1>Announcements</h1>
+      <p>O MOHAU WA MODIMO</p>
+    </div>
+  </div>
+
+  <main class="about-container">
+    <div class="about-content" style="min-height:60vh;display:flex;align-items:center;justify-content:center;">
+      <div style="font-family:'Playfair Display',serif;font-size:clamp(2.5rem,8vw,6rem);font-weight:700;color:var(--text-color,#1a1a2e);text-align:center;line-height:1.2;padding:2rem;user-select:none;">
+        O MOHAU WA MODIMO
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <a href="about.html">Our Story</a>
+        <a href="about.html">Mission &amp; Vision</a>
+        <a href="about.html">Our Leaders</a>
+        <a href="about.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Next Steps</h4>
+        <a href="about.html#contacts">Plan a Visit</a>
+        <a href="about.html#contacts">Join a Group</a>
+        <a href="about.html#contacts">Support Groups</a>
+        <a href="about.html#feedbackForm">Prayer Requests</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ministries &amp; Care</h4>
+        <a href="memories.html">Ministries Overview</a>
+        <a href="profile.html">Youth Events</a>
+        <a href="memories.html">Worship Nights</a>
+        <a href="about.html">Prayer &amp; Support</a>
+      </div>
+      <div class="footer-col">
+        <h4>Messages &amp; Media</h4>
+        <a href="memories.html">Sermons</a>
+        <a href="memories.html">Stories</a>
+        <a href="https://www.tiktok.com/@_aymofficial" target="_blank">TikTok</a>
+        <a href="memories.html">Media Library</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Apostolic Youth Movement</span>
+      <a href="https://867d6e7d.keletsotladiportfolio.pages.dev/" target="_blank" class="footer-dev-link">Developed By Keletso Tladi</a>
+    </div>
+  </footer>
+
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <div class="modal-icon"><i class="fas fa-heart"></i></div>
+      <h2>Thank You!</h2>
+      <p>Your support means the world to us.</p>
+      <button class="btn btn-primary" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+</body>
+</html>

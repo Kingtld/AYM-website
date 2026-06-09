@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministries | Apostolic Youth Movement</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <link rel="preload" href="Media/Youth background.jpeg" as="image" fetchpriority="high">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all';this.onload=null;">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="Media/Logo.jpeg" alt="AYM Logo" class="nav-logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="memories.html" class="nav-link active">Ministries</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="announcements.html" class="nav-link">Announcements</a>
+      </div>
+      <div class="nav-actions">
+        <span class="admin-indicator" id="adminIndicator"><i class="fas fa-shield-alt"></i> Admin</span>
+        <button class="nav-give-btn" onclick="bookEvent('Give')"><i class="fas fa-heart"></i> Give</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="memories.html" class="active">Ministries</a>
+      <a href="profile.html">Profile</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="about.html#feedbackForm">Contact</a>
+    </div>
+  </div>
+
+  <div class="page-header" style="background-image: url('Media/Youth background.jpeg'); background-size: cover; background-position: center; position: relative;">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,71,161,0.85),rgba(26,107,255,0.75));z-index:0;"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <h1 fetchpriority="high">Ministries &amp; Memories</h1>
+      <p>Moments of worship, fellowship, and service</p>
+    </div>
+  </div>
+
+  <main class="reels-container">
+    <div class="tiktok-section reveal">
+      <div class="tiktok-header">
+        <i class="fab fa-tiktok"></i>
+        <h2>TikTok Moments</h2>
+        <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="tiktok-follow-btn">Follow @_aymofficial</a>
+      </div>
+      <div class="tiktok-embed-container" id="tiktokEmbeds">
+        <p class="tiktok-placeholder">TikTok videos load here. <a href="https://www.tiktok.com/@_aymofficial" target="_blank">Visit our TikTok</a> to see all content.</p>
+      </div>
+    </div>
+
+    <div class="reel reveal" id="reel1" data-media="Media/Youth Outing- Beautiful Youth.jpeg">
+      <div class="reel-content has-image" style="background-image: url('Media/Youth Outing- Beautiful Youth.jpeg')">
+        <div class="reel-overlay">
+          <h2>Youth Night 2025</h2>
+          <p>An unforgettable night of worship and fellowship</p>
+        </div>
+        <div class="reel-actions">
+          <i class="fas fa-heart"></i><span>1.2k</span>
+          <i class="fas fa-share" onclick="sharePage(event)"></i>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-download-btn" title="Download on TikTok"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reel reveal reveal-delay-1" id="reel2" data-media="Media/Gala Diner.jpeg">
+      <div class="reel-content has-image" style="background-image: url('Media/Gala Diner.jpeg')">
+        <div class="reel-overlay">
+          <h2>Christmas Service</h2>
+          <p>Celebrating the birth of our Savior</p>
+        </div>
+        <div class="reel-actions">
+          <i class="fas fa-heart"></i><span>2.4k</span>
+          <i class="fas fa-share" onclick="sharePage(event)"></i>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-download-btn" title="Download on TikTok"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reel reveal reveal-delay-2" id="reel3" data-media="Media/church event hero background.jpeg">
+      <div class="reel-content has-image" style="background-image: url('Media/church event hero background.jpeg')">
+        <div class="reel-overlay">
+          <h2>Bible Study Group</h2>
+          <p>Diving deep into God's word</p>
+        </div>
+        <div class="reel-actions">
+          <i class="fas fa-heart"></i><span>987</span>
+          <i class="fas fa-share" onclick="sharePage(event)"></i>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-download-btn" title="Download on TikTok"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reel reveal reveal-delay-3" id="reel4" data-media="Media/Community outreach.jpeg">
+      <div class="reel-content has-image" style="background-image: url('Media/Community outreach.jpeg')">
+        <div class="reel-overlay">
+          <h2>Community Outreach</h2>
+          <p>Serving our community with love</p>
+        </div>
+        <div class="reel-actions">
+          <i class="fas fa-heart"></i><span>1.8k</span>
+          <i class="fas fa-share" onclick="sharePage(event)"></i>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-download-btn" title="Download on TikTok"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reel reveal reveal-delay-4" id="reel5" data-media="Media/27 years celebration (1).jpeg">
+      <div class="reel-content has-image" style="background-image: url('Media/27 years celebration (1).jpeg')">
+        <div class="reel-overlay">
+          <h2>Easter Celebration</h2>
+          <p>He is risen! Hallelujah!</p>
+        </div>
+        <div class="reel-actions">
+          <i class="fas fa-heart"></i><span>3.1k</span>
+          <i class="fas fa-share" onclick="sharePage(event)"></i>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-download-btn" title="Download on TikTok"><i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="reel-grid reveal">
+    <div class="section-header">
+      <h2>All Media</h2>
+      <p>Tap to view - download on TikTok</p>
+    </div>
+    <div class="reel-grid-inner">
+
+      <div class="reel-card" data-media="Media/youth males.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/youth males.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>Youth Males</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/Youth outing.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/Youth outing.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>Youth Outing</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/27 years celebration (2).jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/27 years celebration (2).jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>27 Years Celebration</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/27 years celebration (3).jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/27 years celebration (3).jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>27 Years Celebration</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/Sister Mapule Motabeni (MC of the night).jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/Sister Mapule Motabeni (MC of the night).jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>Sister Mapule Motabeni</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/Never going hungry while part of the youth (1).jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/Never going hungry while part of the youth (1).jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>Never Going Hungry</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/Never going hungry while part of the youth (2).jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/Never going hungry while part of the youth (2).jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>Never Going Hungry</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/Never going hungry while part of the youth (3).jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/Never going hungry while part of the youth (3).jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>Never Going Hungry</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/Never going hungry while part of the youth (4).jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/Never going hungry while part of the youth (4).jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>Never Going Hungry</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/Never going hungry while part of the youth (5).jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/Never going hungry while part of the youth (5).jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>Never Going Hungry</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_1.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_1.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_4.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_4.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_5.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_5.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_6.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_6.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_7.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_7.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_8.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_8.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_10.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_10.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_11.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_11.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_12.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_12.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_15.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_15.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_16.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_16.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_17.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_17.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_18.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_18.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_23.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_23.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615168150841117973_32.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615168150841117973_32.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615160476871396629_1.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615160476871396629_1.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615160476871396629_2.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615160476871396629_2.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615160476871396629_6.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615160476871396629_6.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7615884674472103188_1.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7615884674472103188_1.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7480289948508114181_1.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7480289948508114181_1.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7574337405671509255_1.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7574337405671509255_1.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card" data-media="Media/TikVideo.App_7574337405671509255_13.jpeg" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7574337405671509255_13.jpeg')"></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Moment</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card reel-card-video" data-media="Media/TikVideo.App_7574325692419165448-hd.mp4" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7574337405671509255_13.jpeg')"></div>
+        <div class="reel-card-play"><i class="fas fa-play"></i></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Video</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+      <div class="reel-card reel-card-video" data-media="Media/TikVideo.App_7576545192204029191-hd.mp4" onclick="playReelMedia(this)">
+        <div class="reel-card-bg" style="background-image: url('Media/TikVideo.App_7480289948508114181_1.jpeg')"></div>
+        <div class="reel-card-play"><i class="fas fa-play"></i></div>
+        <div class="reel-card-overlay">
+          <h4>TikTok Video</h4>
+          <a href="https://www.tiktok.com/@_aymofficial" target="_blank" class="reel-card-download" onclick="event.stopPropagation()"><i class="fas fa-download"></i> Download</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-content"></div>
+    <button class="lightbox-nav next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-counter">1 / 1</div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <a href="about.html">Our Story</a>
+        <a href="about.html">Mission &amp; Vision</a>
+        <a href="about.html">Our Leaders</a>
+        <a href="about.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Next Steps</h4>
+        <a href="about.html#contacts">Plan a Visit</a>
+        <a href="about.html#contacts">Join a Group</a>
+        <a href="about.html#contacts">Support Groups</a>
+        <a href="about.html#feedbackForm">Prayer Requests</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ministries &amp; Care</h4>
+        <a href="memories.html">Ministries Overview</a>
+        <a href="profile.html">Youth Events</a>
+        <a href="memories.html">Worship Nights</a>
+        <a href="about.html">Prayer &amp; Support</a>
+      </div>
+      <div class="footer-col">
+        <h4>Messages &amp; Media</h4>
+        <a href="memories.html">Sermons</a>
+        <a href="memories.html">Stories</a>
+        <a href="https://www.tiktok.com/@_aymofficial" target="_blank">TikTok</a>
+        <a href="memories.html">Media Library</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Apostolic Youth Movement</span>
+      <a href="https://867d6e7d.keletsotladiportfolio.pages.dev/" target="_blank" class="footer-dev-link">Developed By Keletso Tladi</a>
+    </div>
+  </footer>
+
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <div class="modal-icon"><i class="fas fa-heart"></i></div>
+      <h2>Thank You!</h2>
+      <p>Your support means the world to us.</p>
+      <button class="btn btn-primary" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>
