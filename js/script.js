@@ -1,7 +1,5 @@
 const API_BASE = '/api';
 
-let adminToken = sessionStorage.getItem('adminToken');
-
 function showToast(message, type = 'success') {
     const existing = document.querySelector('.toast');
     if (existing) existing.remove();
@@ -176,26 +174,6 @@ function copyNumber(num) {
     }).catch(() => {
         showToast('Failed to copy', 'error');
     });
-}
-
-// ── Admin Indicator on Load ──
-document.addEventListener('DOMContentLoaded', () => {
-    if (adminToken) {
-        const indicator = document.getElementById('adminIndicator');
-        if (indicator) indicator.classList.add('visible');
-    }
-});
-
-// ── Logout Admin ──
-function logoutAdmin() {
-    sessionStorage.removeItem('adminToken');
-    adminToken = null;
-    const indicator = document.getElementById('adminIndicator');
-    if (indicator) indicator.classList.remove('visible');
-    showToast('Logged out successfully', 'success');
-    if (window.location.pathname.startsWith('/admin')) {
-        setTimeout(() => { window.location.href = '/'; }, 1000);
-    }
 }
 
 // ── Existing: Booking ──

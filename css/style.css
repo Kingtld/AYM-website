@@ -303,22 +303,6 @@ img, video { max-width: 100%; height: auto; }
   border-color: var(--gold);
 }
 
-.admin-indicator {
-  display: none;
-  background: var(--accent);
-  color: #fff;
-  padding: 0.25rem 0.7rem;
-  border-radius: var(--btn-radius);
-  font-size: 0.65rem;
-  font-weight: 600;
-  align-items: center;
-  gap: 0.3rem;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-}
-
-.admin-indicator.visible { display: inline-flex; }
-
 /* Hamburger */
 .hamburger {
   display: none;
