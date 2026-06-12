@@ -1199,6 +1199,10 @@ img, video { max-width: 100%; height: auto; }
   margin-bottom: 2rem;
 }
 
+.media-toggle-icon {
+  display: none;
+}
+
 .reel-grid .section-header h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: 0.25rem;
@@ -1317,6 +1321,57 @@ img, video { max-width: 100%; height: auto; }
     gap: 0.75rem;
     background: transparent;
     padding: 0;
+  }
+  .reel-grid .section-header {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all var(--transition);
+  }
+  .reel-grid .section-header:hover {
+    border-color: var(--primary);
+  }
+  .reel-grid .section-header h2 {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  .reel-grid .section-header p {
+    display: none;
+  }
+  .media-toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--bg-soft);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    transition: transform 0.3s ease;
+  }
+  .media-toggle-icon.open {
+    transform: rotate(180deg);
+  }
+  .reel-grid .reel-grid-inner {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease, margin 0.3s ease;
+    padding: 0;
+    margin-top: 0;
+  }
+  .reel-grid .reel-grid-inner.expanded {
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+    margin-top: 0.75rem;
   }
 }
 
