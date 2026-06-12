@@ -1,9 +1,9 @@
 <?php
 // --- Database Configuration ---
-define('DB_HOST', 'sqlXXX.infinityfree.com');
-define('DB_NAME', 'if0_XXXXXX_aym');
-define('DB_USER', 'if0_XXXXXX');
-define('DB_PASS', 'your_db_password_here');
+define('DB_HOST', 'sql106.infinityfree.com');
+define('DB_NAME', 'if0_42140002_aym');
+define('DB_USER', 'if0_42140002');
+define('DB_PASS', 'Palesamira97');
 
 // --- Admin Secret Codes (must match exactly) ---
 define('ADMIN_NAME', 'Jehofa');
