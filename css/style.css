@@ -64,6 +64,10 @@
   --neon-border: #4da3ff;
 }
 
+[data-theme="dark"] .reel-card {
+  border-color: #2a2a3e;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
