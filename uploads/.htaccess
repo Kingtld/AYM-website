@@ -1,0 +1,9 @@
+# Disable PHP execution in uploads directory
+php_flag engine off
+AddType text/plain .php .phtml .php3 .php4 .php5 .php7 .phar
+
+# Allow direct access to media files
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|mp4|webm|mov)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
