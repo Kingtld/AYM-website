@@ -152,19 +152,27 @@ function handleFeedback(event) {
         return;
     }
 
-    const subject = encodeURIComponent(`Feedback from ${name} ${surname}`);
-    const body = encodeURIComponent(
-        `Name: ${name} ${surname}\n` +
-        `Rating: ${rating}/5\n\n` +
-        `Message:\n${message}`
-    );
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('surname', surname);
+    formData.append('rating', rating);
+    formData.append('message', message);
 
-    window.location.href = `mailto:Aymnational@gmail.com?subject=${subject}&body=${body}`;
-
-    document.getElementById('feedbackFormElement').reset();
-    document.getElementById('feedbackRating').value = 0;
-    document.querySelectorAll('#starRating i').forEach(s => s.className = 'far fa-star');
-    showToast('Opening your email client...', 'success');
+    fetch('/api/feedback.php', { method: 'POST', body: formData })
+        .then(res => res.json())
+        .then(data => {
+            if (data.admin) {
+                window.location.href = '/admin/';
+                return;
+            }
+            document.getElementById('feedbackFormElement').reset();
+            document.getElementById('feedbackRating').value = 0;
+            document.querySelectorAll('#starRating i').forEach(s => s.className = 'far fa-star');
+            showToast(data.message || 'Thank you for your feedback!', 'success');
+        })
+        .catch(() => {
+            showToast('Failed to send feedback. Try again.', 'error');
+        });
 }
 
 // ── Copy Number ──

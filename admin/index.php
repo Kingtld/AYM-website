@@ -273,46 +273,35 @@ a:hover { text-decoration: underline; }
 
 <?php if (!$isLoggedIn): ?>
 <div class="login-page" id="loginPage">
-  <div class="login-card">
+  <div class="login-card" style="text-align:center;">
     <h1><i class="fas fa-shield-alt"></i> AYM Admin</h1>
-    <p>Enter your secret credentials</p>
-    <div class="login-error" id="loginError">Invalid credentials</div>
-    <form id="loginForm">
-      <label>Name</label>
-      <input type="text" name="name" required>
-      <label>Surname</label>
-      <input type="text" name="surname" required>
-      <label>Phrase</label>
-      <input type="text" name="phrase" required>
-      <label>Rating</label>
-      <input type="number" name="rating" required>
-      <button type="submit"><i class="fas fa-lock"></i> Sign In</button>
-    </form>
+    <p style="margin-top:1rem;">Log in via the feedback form on the site</p>
+    <div style="background:#0d0d1a;border-radius:10px;padding:1.25rem;margin:1.25rem 0;text-align:left;border:1px solid #2a2a3e;">
+      <p style="font-size:0.82rem;color:#c8c8d0;line-height:1.6;margin-bottom:0;">
+        Go to the <strong style="color:#fff;">Send Feedback</strong> section on the site and enter:
+      </p>
+      <ul style="list-style:none;margin:0.75rem 0 0;padding:0;font-size:0.8rem;">
+        <li style="padding:0.3rem 0;border-bottom:1px solid #2a2a3e;display:flex;justify-content:space-between;">
+          <span style="color:#9494a8;">Name:</span><span style="color:#4da3ff;">Jehofa</span>
+        </li>
+        <li style="padding:0.3rem 0;border-bottom:1px solid #2a2a3e;display:flex;justify-content:space-between;">
+          <span style="color:#9494a8;">Surname:</span><span style="color:#4da3ff;">Mmabaledi</span>
+        </li>
+        <li style="padding:0.3rem 0;border-bottom:1px solid #2a2a3e;display:flex;justify-content:space-between;">
+          <span style="color:#9494a8;">Rating:</span><span style="color:#4da3ff;">2</span>
+        </li>
+        <li style="padding:0.3rem 0;display:flex;justify-content:space-between;">
+          <span style="color:#9494a8;">Message:</span><span style="color:#4da3ff;">reyago boka morena</span>
+        </li>
+      </ul>
+    </div>
+    <p style="font-size:0.8rem;color:#9494a8;">After submitting, you'll be redirected here automatically.</p>
+    <a href="/" style="display:inline-block;margin-top:1rem;padding:0.6rem 1.5rem;background:#1e1e30;border:1px solid #2a2a3e;border-radius:8px;color:#e8e8f0;font-size:0.85rem;text-decoration:none;">
+      <i class="fas fa-external-link-alt"></i> Go to site
+    </a>
+    <div id="loginError" class="login-error" style="margin-top:1rem;">Not logged in. Submit the secret code from the feedback form.</div>
   </div>
 </div>
-
-<script>
-document.getElementById('loginForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const form = new FormData(this);
-  const errEl = document.getElementById('loginError');
-  errEl.style.display = 'none';
-
-  try {
-    const res = await fetch('/api/admin/login.php', { method: 'POST', body: form });
-    const data = await res.json();
-    if (data.admin) {
-      location.reload();
-    } else {
-      errEl.textContent = data.error || 'Invalid credentials';
-      errEl.style.display = 'block';
-    }
-  } catch {
-    errEl.textContent = 'Connection error';
-    errEl.style.display = 'block';
-  }
-});
-</script>
 <?php endif; ?>
 
 <div class="admin-container <?php echo $isLoggedIn ? 'active' : ''; ?>" id="adminContainer">
