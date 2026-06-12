@@ -65,6 +65,7 @@
 }
 
 [data-theme="dark"] .reel-card {
+  background: #1e1e30;
   border-color: #2a2a3e;
 }
 
@@ -1227,7 +1228,7 @@ img, video { max-width: 100%; height: auto; }
   overflow: hidden;
   cursor: pointer;
   aspect-ratio: 1;
-  background: #1a1a2e;
+  background: #e8e8f0;
   border: 1px solid var(--border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
