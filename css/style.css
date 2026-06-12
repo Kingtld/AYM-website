@@ -1229,7 +1229,7 @@ img, video { max-width: 100%; height: auto; }
   cursor: pointer;
   aspect-ratio: 1;
   background: #e8e8f0;
-  border: 1px solid var(--border);
+  border: 1px solid #d0d8e4;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
