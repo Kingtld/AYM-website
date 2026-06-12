@@ -1213,9 +1213,8 @@ img, video { max-width: 100%; height: auto; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  background: var(--bg-card);
-  border-radius: 12px;
-  padding: 0.5rem;
+  background: transparent;
+  padding: 0;
 }
 
 .reel-card {
@@ -1225,6 +1224,7 @@ img, video { max-width: 100%; height: auto; }
   cursor: pointer;
   aspect-ratio: 1;
   background: #1a1a2e;
+  border: 1px solid var(--border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1315,8 +1315,6 @@ img, video { max-width: 100%; height: auto; }
   .reel-grid-inner {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
-    background: transparent;
-    padding: 0;
   }
 }
 
@@ -1324,8 +1322,6 @@ img, video { max-width: 100%; height: auto; }
   .reel-grid-inner {
     grid-template-columns: 1fr;
     gap: 0.75rem;
-    background: transparent;
-    padding: 0;
   }
   .reel-card {
     aspect-ratio: 4/3;
