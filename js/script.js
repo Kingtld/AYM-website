@@ -502,21 +502,4 @@ function sharePage(event) {
     }
 }
 
-// ── Mobile: Expandable All Media ──
-function initMediaToggle() {
-    const toggle = document.getElementById('allMediaToggle');
-    const grid = document.getElementById('allMediaGrid');
-    const icon = document.getElementById('mediaToggleIcon');
-    const countP = document.getElementById('mediaCount');
-    if (!toggle || !grid || !icon || !countP) return;
 
-    const cards = grid.querySelectorAll('.reel-card');
-    countP.textContent = cards.length + ' items';
-
-    toggle.addEventListener('click', () => {
-        const isOpen = grid.classList.toggle('expanded');
-        icon.classList.toggle('open', isOpen);
-    });
-}
-
-document.addEventListener('DOMContentLoaded', initMediaToggle);
